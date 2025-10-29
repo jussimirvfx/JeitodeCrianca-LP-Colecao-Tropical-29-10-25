@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeito de Criança - Coleção Inverno 2026</title>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="/images/hero-mobile.webp" media="(max-width: 1023px)" />
+    <link rel="preload" as="image" href="/images/hero-desktop.webp" media="(min-width: 1024px)" />
+    <link rel="preload" as="image" href="/images/logo.webp" />
+    
+    <!-- Favicon links -->
+    <link rel="shortcut icon" href="https://frwfcibbvbj5zog7.public.blob.vercel-storage.com/jeito-de-crianca-inverno/cropped-favico-jeito-de-crianca-32x32-1758808537082.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://frwfcibbvbj5zog7.public.blob.vercel-storage.com/jeito-de-crianca-inverno/cropped-favico-jeito-de-crianca-32x32-1758808537082.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://frwfcibbvbj5zog7.public.blob.vercel-storage.com/jeito-de-crianca-inverno/cropped-favico-jeito-de-crianca-32x32-1758808537082.webp">
+    <link rel="apple-touch-icon" href="https://frwfcibbvbj5zog7.public.blob.vercel-storage.com/jeito-de-crianca-inverno/cropped-favico-jeito-de-crianca-32x32-1758808537082.webp">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-blue': '#1B356D',
+              'brand-light': '#F9F9F9',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              baloo: ['"Baloo 2"', 'cursive'],
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
