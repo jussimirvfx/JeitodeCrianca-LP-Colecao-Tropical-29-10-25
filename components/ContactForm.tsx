@@ -10,7 +10,7 @@ import {
   validarNome, 
   validarCNPJ 
 } from '../leadScoringUtils';
-import { useMetaPixel } from '@jussimirvfx/meta-pixel-tracking';
+// import { useMetaPixel } from '@jussimirvfx/meta-pixel-tracking';
 import { sendToWebhook, prepareWebhookPayload } from '../webhookUtils';
 
 const InputField: React.FC<{ 
@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
     const [errors, setErrors] = useState<Partial<FormData>>({});
     
     // 🔑 PASSO 1: Importar os hooks do Meta Pixel
-    const { trackLead, trackLeadQualificado } = useMetaPixel();
+    // const { trackLead, trackLeadQualificado } = useMetaPixel();
     
     // Estado do formulário com os nomes corretos para Meta Pixel
     const [formData, setFormData] = useState<FormData>({
@@ -244,14 +244,14 @@ const ContactForm: React.FC = () => {
 
             // 🔑 PASSO 5: SEMPRE ENVIAR LEAD + VERIFICAR SE É QUALIFICADO
             // ✅ LEAD sempre dispara (qualquer score)
-            await trackLead(leadData);
+            // await trackLead(leadData);
             console.log('✅ Lead enviado para Meta!');
             
             // ✅ LEAD QUALIFICADO dispara apenas se for qualificado
             const isLeadQualificado = verificarQualificacao(formData, leadScore);
             if (isLeadQualificado) {
                 console.log(`📊 Lead qualificado detectado (score: ${leadScore}, tipo: ${formData.tipoLoja})`);
-                await trackLeadQualificado(leadData);
+                // await trackLeadQualificado(leadData);
                 console.log('✅ Lead qualificado enviado para Meta!');
             } else {
                 console.log(`📊 Lead básico (score: ${leadScore}, não qualificado)`);

@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@jussimirvfx/meta-pixel-tracking": "^1.18.2",
+    "@jussimirvfx/meta-pixel-tracking": "^1.15.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
