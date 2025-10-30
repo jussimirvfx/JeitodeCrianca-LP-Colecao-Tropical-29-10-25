@@ -1,12 +1,12 @@
 import { LeadScoreConfig } from './types';
 
 export const leadScoreConfig: LeadScoreConfig = {
-  lastUpdated: "2025-10-28T18:47:12.457Z",
+  lastUpdated: "2025-10-30T00:00:00.000Z",
   stateConfig: {
     question: "Em qual estado está localizado?",
-    priorityStates: ["PR", "MG"],
-    disqualifyNonPriority: true,
-    pointsForPriorityState: 1
+    priorityStates: [],
+    disqualifyNonPriority: false,
+    pointsForPriorityState: 0
   },
   questions: [
     {

@@ -28,14 +28,6 @@ export const validarCNPJ = (cnpj: string): boolean => {
 export const calculateLeadScore = (formData: FormData): number => {
   let score = 0;
   
-  // Verificar estado prioritário primeiro
-  const isPriorityState = leadScoreConfig.stateConfig.priorityStates.includes(formData.estado);
-  if (isPriorityState) {
-    score += leadScoreConfig.stateConfig.pointsForPriorityState;
-  } else if (leadScoreConfig.stateConfig.disqualifyNonPriority) {
-    return 0; // Desqualificar se não for estado prioritário
-  }
-  
   // Calcular pontos baseado nas perguntas configuradas
   for (const question of leadScoreConfig.questions) {
     if (!question.enabled) continue;
