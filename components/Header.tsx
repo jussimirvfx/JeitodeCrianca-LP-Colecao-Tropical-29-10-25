@@ -60,7 +60,6 @@ const Header: React.FC = () => {
         <Logo />
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight mt-6 mb-4 max-w-4xl uppercase text-white md:text-black">
           NOVA COLEÇÃO<br />TROPICAL 2026
-          <span className="font-baloo block my-1 text-6xl sm:text-8xl md:text-[10rem] md:leading-[1] font-extrabold text-white md:text-black">PAPELIÊ</span>
         </h2>
         <p className="text-lg md:text-2xl font-light mb-8 text-white md:text-black">
           EXCLUSIVA PARA LOJISTAS
